@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import * as noteController from '@/api/v1/internal/note/controller';
 
 const router = Router();
 
@@ -8,8 +9,8 @@ const router = Router();
  */
 
 /**
- * @summary Internal routes placeholder
- * @description Feature routes will be added here
+ * @summary Note routes
  */
+router.post('/note', noteController.postHandler);
 
 export default router;
